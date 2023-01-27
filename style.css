@@ -1,0 +1,656 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.nav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 30px;
+  /* background-color: #f5f7f7; */
+  background-color: #eef1f6;
+  /* padding-bottom: 32px; */
+}
+/* get started button is not a div   */
+nav div {
+  display: flex;
+  align-items: center;
+  color: #192f62;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 24px 0 0 0;
+}
+.nav-logo {
+  margin: 28px 60px 0 80px;
+}
+.nav-icon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.get-started-btn {
+  color: #fff;
+  background: #fc3d65;
+  border: none;
+  margin: 20px 90px 0 auto;
+  font-weight: 600;
+  padding: 15px 32px;
+  border-radius: 25px;
+}
+.nav-link {
+  text-decoration: none;
+  /* color: #000; */
+  font-weight: 500;
+  color: #192f62;
+}
+/* background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("images/Project Images/hero.png"); */
+header {
+  /* background-color: #f5f7f7; */
+  background-color: #eef1f6;
+  /* height: 100hv; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 80px;
+}
+.header-text {
+  /* align-self: flex-start; */
+  /* height: 60vh; */
+  margin-top: 19%;
+  margin-left: 80px;
+  color: #192f62;
+}
+.header-text p {
+  font-size: 54px;
+  line-height: 1.06;
+}
+header p span {
+  display: block;
+}
+.header-bold {
+  font-weight: 700;
+}
+.header-text .header-small {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 16px 0 32px 0;
+}
+.header-text .mail-us {
+  background-color: #fff;
+  /* font-size: 12px; */
+  color: #adb5bd;
+  width: 350px;
+  padding: 12px 16px;
+  border-radius: 32px;
+  border-left: 3px solid #fc3d65;
+  /* Shadow */
+  box-shadow: 0px 24px 32px 0px rgb(148 164 191 / 35%);
+  /* Flex */
+  display: flex;
+  align-items: center;
+}
+.mail-us p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+  margin-left: 16px;
+}
+.icons {
+  width: 22px;
+  height: 22px;
+}
+.mail-us .right-arrow {
+  color: #fc3d65;
+  margin-left: auto;
+}
+.hero-img {
+  margin-top: 15%;
+  /* height: 100vh; */
+}
+/* HEADER SECTION */
+.feedback {
+  padding: 40px;
+  margin-top: 36px;
+  font-size: 16px;
+  /* flex  */
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+.people {
+  /* to handle images position  */
+  position: relative;
+  /*  */
+  margin-right: 32px;
+  background-color: #91a5a525;
+  height: 50px;
+  width: 133px;
+  /* border-radius */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.feedback p {
+  color: #192f62;
+  font-size: 28px;
+  font-weight: 700;
+}
+p.feedback-not-bold {
+  font-size: 14px;
+  color: #192f62;
+  font-weight: 400;
+}
+
+.people img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.img4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.img3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(55%, 0);
+}
+.img2 {
+  position: absolute;
+  top: 0px;
+  left: 55px;
+  transform: translate(0%, 0);
+}
+.img1 {
+  position: absolute;
+  top: 0px;
+  left: 82.5px;
+  transform: translate(0%, 0);
+}
+/*END OF HEADER STYLE*/
+
+/*  Features section */
+.features-section {
+  background-color: white;
+  /* margin-bottom: 64px;
+  margin-left: 64px;
+  margin-right: 64px; */
+  margin: 80px;
+}
+.section-heading {
+  color: #192f62;
+  font-size: 34px;
+  font-weight: 700;
+}
+.feature-text-and-view-features {
+  /* flex  */
+  display: flex;
+  align-items: center;
+  /* padding and margin  */
+  margin-bottom: 48px;
+}
+.section-first-text {
+  color: #696a6f;
+  font-size: 16px;
+}
+a.view-features {
+  /* Note: width: fit-content; This value not supported by edge*/
+  /* convert anchor to block */
+  display: block;
+  text-decoration: none;
+  /*  */
+  font-size: 16px;
+  color: #192f62;
+  font-weight: 500;
+  border-radius: 25px;
+  border: 1px solid #adb5bd;
+  /* flex  */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding and margin  */
+  padding: 12px 25px;
+  margin-left: auto;
+}
+
+.features-grid-2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 32px;
+  /* gap: 16px;  NOTE : is gap used in grid?*/
+  /* margin-right: 63px; done for the whole "features"-section*/
+}
+.feature-square {
+  /* NOTE: no height given because if the the view port changed the contect will overflow */
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  /* top right bottom left  */
+  padding: 60px 64px 60px 48px;
+}
+.icon-div {
+  /* padding: 20px; */
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  /* Center the icon in the div  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin  */
+  margin-bottom: 32px;
+}
+.feature-icon {
+  height: 16px;
+  width: 16px;
+  fill: white;
+  stroke: white;
+  /*NOTE padding: 20px; no padding for icons  */
+}
+.feature-square h3 {
+  margin-bottom: 8px;
+}
+.feature-square p {
+  line-height: 1.5;
+  color: #696a6f;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+a.read-mor {
+  color: #696a6f;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+}
+.icon-div.bolt {
+  background-color: #32aaf8;
+}
+.icon-div.home {
+  background-color: #df5493;
+}
+.icon-div.link {
+  background-color: #3679fe;
+}
+.icon-div.bell {
+  background-color: #f67944;
+}
+.icon-div.maintenance {
+  background-color: #6b88f7;
+}
+.icon-div.security {
+  background-color: #3bb094;
+}
+.text-img-flex-sections {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 32px;
+  /* margin-left: 64px;
+  margin-right: 64px;
+  margin-bottom: 80px; */
+  margin: 80px;
+}
+.marketing {
+  /* background-color: #f5f7f7; */
+  background-color: #eef1f6;
+}
+.marketing-text {
+  /* align-self: center; */
+  /* margin-bottom: 32px; */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.pink-heading2 {
+  color: #df5493;
+  font-size: 14px;
+  font-weight: 600;
+  /* margin-top: 80px; */
+  margin-bottom: 16px;
+}
+.large-blue-bold {
+  color: #192f62;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.marketing span {
+  display: block;
+}
+.small-grey-text {
+  color: #696a6f;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 48px;
+}
+.one-benefit {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 32px;
+}
+.check {
+  width: 42px;
+  height: 42px;
+  fill: #32c36a;
+  margin-right: 8px;
+  /* stroke: white; removed to be thinner */
+}
+
+.benefits h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* End Of Features section */
+
+/* Advantages Section */
+
+.advantages-section {
+  color: white;
+  background-color: #0e1133;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  margin-bottom: 80px;
+}
+.advantages-flex {
+  margin-bottom: 0;
+}
+.advantages-section h2,
+.advantages-section p {
+  text-align: center;
+}
+span {
+  display: block;
+}
+.advantages-flex {
+  gap: 96px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Of Advantages Section*/
+
+/*Installation Section*/
+.installation-section {
+  margin: 80px;
+}
+.installation-section .get-started-btn {
+  background-color: #fff;
+  color: #0e1133;
+  border: 3px solid #eef1f6;
+}
+.installation-4-sqaures {
+  display: flex;
+  /* gap: 80px; */
+
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 24px;
+}
+.installation-square {
+  width: 210px;
+  height: 210px;
+  box-shadow: 0 20px 32px 0px rgb(148 164 191 / 35%);
+}
+.videos {
+  /* margin: 80px; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  /* gap: 32px; */
+}
+.icon-upon-image {
+  /* display: flex; */
+}
+/* .thumb-img {
+  width: 850;
+} */
+.slide-img {
+  height: 350px;
+  width: 450px;
+}
+
+/* End Of installation section  */
+
+/* availability-section */
+.availability-section {
+  /* background-color: #f5f7f7; */
+  background-color: #eef1f6;
+  padding: 80px;
+  margin-bottom: 80px;
+}
+.availability-section .small-grey-text {
+  margin-bottom: 24px;
+}
+.download-for {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.ios,
+.android {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  height: 75px;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 3px solid #0e1133;
+  border-radius: 12px;
+}
+.ios {
+  background-color: #0e1133;
+  color: #fff;
+}
+.ios .icons {
+  width: 28px;
+  height: 28px;
+}
+.android {
+  background-color: #fff;
+  color: #0e1133;
+}
+.android .icons {
+  width: 48px;
+  height: 48px;
+}
+.bold-span {
+  font-weight: 700;
+  font-size: 24px;
+}
+/* End of availability-section  */
+
+/* pricing-sponsers-testimonial-section  */
+
+.pricing-sponsers-testimonial-section {
+  text-align: center;
+  margin: 0 80px 80px 80px;
+}
+.month-year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.month {
+}
+.year {
+}
+.pricing-plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan {
+  width: 300px;
+  height: 600px;
+  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
+}
+.plan-feature {
+  display: flex;
+  align-items: center;
+  color: #192f62;
+}
+
+.testimonial {
+  color: #fff;
+  background-color: #2c6ff4;
+  background: -webkit-linear-gradient(to right, #2c6ff4, #2a97f6);
+  background: linear-gradient(to right, #2c6ff4, #2a97f6);
+}
+/* End Of pricing-sponsers-testimonial-section  */
+.sponsers-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sponser-card {
+  padding: 16px;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.1);
+  /* top right bottom left  */
+  /* padding: 60px 64px 60px 48px; */
+}
+
+/* Footer  */
+footer {
+  background-color: #eef1f6;
+  padding: 48px 80px 48px 80px;
+  position: relative;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 80px 0 80px 0; */
+  padding-bottom: 64px;
+  border-bottom: 2px solid #e3e7ee;
+  /* #adb5bd; */
+  /* margin: 0px 80px 32px 80px; */
+  margin-bottom: 32px;
+}
+.footer-logo,
+footer h4 {
+  margin-bottom: 16px;
+}
+.footer-text {
+  color: #696a6f;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+footer .read-mor:link,
+footer .read-mor:visited {
+  color: #192f62;
+  margin-bottom: 32px;
+}
+.social-pages {
+  display: flex;
+  gap: 12px;
+}
+.page-link:link,
+.page-link:visited {
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 8px;
+  /* to center  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  color: #192f62;
+}
+
+.footer-column a:link,
+.footer-column a:visited {
+  text-decoration: none;
+  font-size: 14px;
+  color: #192f62;
+  line-height: 1.9;
+}
+.contacts {
+  justify-self: flex-end;
+}
+.footer-column.contacts a:link,
+.footer-column.contacts a:visited {
+  color: #696a6f;
+  display: flex;
+  /* between tect and icon  */
+  gap: 12px;
+}
+.footer-bottom {
+  /* copyright and download  */
+  display: flex;
+  justify-content: space-between;
+}
+.download-for {
+  /* 2 download boxes  */
+  display: flex;
+  gap: 8px;
+}
+.ios-footer:link,
+.ios-footer:visited,
+.android-footer:link,
+.android-footer:visited {
+  text-decoration: none;
+  color: #192f62;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid #e3e7ee;
+  border-radius: 8px;
+}
+.ios-footer:link,
+.ios-footer:visited {
+  background-color: #fff;
+}
+
+.copyrights {
+  color: #696a6f;
+  font-size: 14px;
+}
+.to-top-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  background-color: #f3b8c8;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+/* End Of Footer  */
