@@ -2,26 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Appie</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="img/icons/favicon-64x64.png"
+    />
+    <link rel="manifest" href="img/icons/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Appie</title>
   </head>
   <body>
-    <header id="top" class="header">
-      <!-- <div class="nav-logo"> -->
-      <img class="header-logo" src="img/logo.png" alt="Appie's logo" />
-      <!-- </div> -->
+    <header class="header">
+      <div class="nav-logo">
+        <img class="header-logo" src="img/logo.png" alt="Appie's logo" />
+      </div>
       <nav class="header-navigation">
         <ul class="header-nav-list">
           <li>
-            <a class="header-navigation-links" href="#" title=""
+            <a class="header-navigation-links" href="#" title="Home Page"
               >Home
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,10 +65,12 @@
             </a>
           </li>
           <li>
-            <a class="header-navigation-links" href="#" title="">Service</a>
+            <a class="header-navigation-links" href="#" title="Our Services"
+              >Service</a
+            >
           </li>
           <li>
-            <a class="header-navigation-links" href="#" title=""
+            <a class="header-navigation-links" href="#" title="Other Pages"
               >Pages
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +89,7 @@
             </a>
           </li>
           <li>
-            <a class="header-navigation-links" href="#" title=""
+            <a class="header-navigation-links" href="#" title="News"
               >News
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,77 +108,29 @@
             </a>
           </li>
           <li>
-            <a class="header-navigation-links" href="#" title="">Contact</a>
+            <a
+              class="header-navigation-links"
+              href="#contact"
+              title="Contact Us"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
-      <a
-        class="header-navigation-links get-started-btn pink-btn margin-left-auto"
-        href="#"
-        title="Get started botton"
-        >Get Started</a
-      >
-
-      <!-- <div>
-        <a href="#" class="nav-link">Home</a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="{1.5}"
-          stroke="currentColor"
-          class="nav-icon"
+      <div class="header-navigation-links-last">
+        <a
+          class="get-started-btn pink-btn"
+          href="#buy"
+          title="Start using Appie"
+          >Get Started</a
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
       </div>
-      <div>
-        <a href="#" class="nav-link">Service</a>
-      </div>
-      <div>
-        <a href="#" class="nav-link">Pages</a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="{1.5}"
-          stroke="currentColor"
-          class="nav-icon"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
-      <div>
-        <a href="#" class="nav-link">News</a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="{1.5}"
-          stroke="currentColor"
-          class="nav-icon"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
-
-      <div>
-        <a href="#" class="nav-link">Contact</a>
-      </div> -->
-      <!-- <button class="get-started-btn">Get Started</button> -->
+      <button type="button" title="navigation menu icon" class="nav-mobile-btn">
+        <ion-icon class="nav-mobile-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="nav-mobile-icon" name="close-outline"></ion-icon>
+      </button>
     </header>
+
     <main>
       <section class="hero-section">
         <div class="hero-div-container">
@@ -160,26 +139,26 @@
               Ready to launch <span>your app in one,</span>
               <span class="over-bold">Application</span>
             </h1>
-            <p class="text16 margin-bottom-paragraphs">
-              Find the best application in the appie.
-            </p>
-            <div class="mail-us margin-bottom-paragraphs">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icons"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
-              <p class="text14">info@appie.com</p>
-              <a href="mailto:info@appie.com" class="margin-left-auto">
+            <p class="text">Find the best application in the appie.</p>
+            <form class="mail-form">
+              <div class="mail-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+              </div>
+              <input class="mail-us" type="mail" placeholder="info@appie.com" />
+              <button class="btn-submit" title="send your email" type="submit">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -194,10 +173,10 @@
                     d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
                   />
                 </svg>
-              </a>
-            </div>
+              </button>
+            </form>
 
-            <div class="feedback text16">
+            <div class="feedback">
               <div class="people">
                 <img
                   class="img1"
@@ -221,13 +200,11 @@
                 />
               </div>
               <div>
-                <p class="text32 over-bold">30k</p>
-                <p class="text16">Feedback</p>
+                <p class="text30 over-bold">30k</p>
+                <p class="text14">Feedback</p>
               </div>
             </div>
           </div>
-          <!-- <div></div>
-          <div></div> -->
           <div class="hero-img-container">
             <img
               class="hero-img"
@@ -246,7 +223,7 @@
             <p class="section-first-text">
               The full monty spiffing good time no biggie cack grub fantastic.
             </p>
-            <a href="#" class="view-features">
+            <a href="#" class="view-features" title="view all features">
               View all Features
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +262,7 @@
                 Oxford posh bevvy give us a bell gutted mate spend a penny
                 quaint cockup plastered.
               </p>
-              <a href="#" class="read-mor">
+              <a href="#" class="read-mor" title="read more about this feature">
                 Read Mor
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +302,7 @@
                 Oxford posh bevvy give us a bell gutted mate spend a peeny
                 quaint cockup plastered
               </p>
-              <a href="#" class="read-mor">
+              <a href="#" class="read-mor" title="read more about this feature">
                 Read Mor
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -364,7 +341,7 @@
                 Oxford posh bevvy give us a bell gutted mate spend a peeny
                 quaint cockup plastered
               </p>
-              <a href="#" class="read-mor">
+              <a href="#" class="read-mor" title="read more about this feature">
                 Read Mor
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -403,7 +380,7 @@
                 Oxford posh bevvy give us a bell gutted mate spend a peeny
                 quaint cockup plastered
               </p>
-              <a href="#" class="read-mor">
+              <a href="#" class="read-mor" title="read more about this feature">
                 Read Mor
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -442,7 +419,7 @@
                 Oxford posh bevvy give us a bell gutted mate spend a peeny
                 quaint cockup plastered
               </p>
-              <a href="#" class="read-mor">
+              <a href="#" class="read-mor" title="read more about this feature">
                 Read Mor
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -481,7 +458,7 @@
                 Oxford posh bevvy give us a bell gutted mate spend a peeny
                 quaint cockup plastered
               </p>
-              <a href="#" class="read-mor">
+              <a href="#" class="read-mor" title="read more about this feature">
                 Read Mor
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -501,19 +478,22 @@
             </div>
           </div>
         </section>
-        <section class="text-img-flex-sections marketing">
-          <img
-            alt="an image of one of appie application pages"
-            src="img/about-thumb-cropped.png"
-          />
+        <section class="marketing">
+          <div class="marketing-img-div">
+            <img
+              class="marketing-img"
+              alt="an image of one of appie application pages"
+              src="img/about-thumb-cropped.png"
+            />
+          </div>
           <div class="marketing-text">
             <h2 class="pink-heading2">Marketing</h2>
             <h3 class="large-blue-bold">
-              Make a lasting <span>impression with appie.</span>
+              Make a lasting <span class="block">impression with appie.</span>
             </h3>
             <p class="small-grey-text">
-              jolly good quaint james bond victoris snonge happy days cras
-              <span>arse over blatant.</span>
+              jolly good quaint james bond victoria snonge happy days cras
+              <span class="block">arse over blatant.</span>
             </p>
             <div class="benefits">
               <div class="one-benefit">
@@ -532,9 +512,10 @@
                 </svg>
                 <div>
                   <h4>Carefully designed</h4>
-
                   <p>
-                    Mucker plastered bugger all<span>mate morish are.</span>
+                    Mucker plastered bugger all<span class="block">
+                      mate morish are.</span
+                    >
                   </p>
                 </div>
               </div>
@@ -555,7 +536,9 @@
                 <div>
                   <h4>Chosse a App</h4>
                   <p>
-                    Mucker plastered bugger all<span>mate morish are.</span>
+                    Mucker plastered bugger all<span class="block">
+                      mate morish are.</span
+                    >
                   </p>
                 </div>
               </div>
@@ -565,41 +548,55 @@
       </div>
       <section>
         <div class="advantages-section">
-          <h2>Wherever you need <span>us the most</span></h2>
-          <p>
-            The full monty spiffing good time no biggie cack grub fantastic.
-          </p>
-          <div class="text-img-flex-sections advantages-flex">
+          <div class="advantages-top-text">
+            <h2>Wherever you need <span class="block">us the most</span></h2>
+            <p>
+              The full monty spiffing good time no biggie cack grub fantastic.
+            </p>
+          </div>
+          <div class="advantages-grid">
             <div class="advantages">
               <div class="one-advantage red-co">
-                <!-- <div></div> -->
+                <div class="one-advantage-before">
+                  <div></div>
+                </div>
                 <div>
                   <h3>Well integrated</h3>
                   <p class="small-white">
-                    the bee's knees chancer car boot absolutely.
+                    The bee's knees chancer car boot absolutely.
                   </p>
                 </div>
               </div>
               <div class="one-advantage blu">
-                <!-- <div></div> -->
+                <div class="one-advantage-before">
+                  <div></div>
+                </div>
                 <div>
                   <h3>Clean and modern Design</h3>
                   <p class="small-white">
-                    the bee's knees chancer car boot absolutely.
+                    The bee's knees chancer car boot absolutely.
                   </p>
                 </div>
               </div>
               <div class="one-advantage green-co">
-                <!-- <div></div> -->
+                <div class="one-advantage-before">
+                  <div></div>
+                </div>
                 <div>
                   <h3>Light and Dark mode</h3>
                   <p class="small-white">
-                    the bee's knees chancer car boot absolutely.
+                    The bee's knees chancer car boot absolutely.
                   </p>
                 </div>
               </div>
             </div>
-            <img src="img/features-thumb-2.png" alt="Explore World Easy" />
+            <div>
+              <img
+                class="advantages-img"
+                src="img/features-thumb-2.png"
+                alt="Explore World Easy"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -638,7 +635,7 @@
               <div class="icon-upon-image">
                 <img
                   class="thumb-img"
-                  src="img/video-thumb-1.jpg"
+                  src="img/video-thumb-1-769w.jpg"
                   alt="a thumb Video
                 explaining how to use appie app."
                 />
@@ -655,17 +652,6 @@
                       fill="#ff3e66"
                     ></path>
                   </svg>
-
-                  <!-- <div class="watc">
-              <h3 class="section-heading" style="font-size: 32px">
-                Watch the two-minute video to learn how.
-              </h3>
-              <p class="small-grey-text">
-                The wireless cheesed on your bike mate conked a load of old Lash
-                hunky dory it's all gone to
-                <span> pot haggle William car boot pear shaped geeza.</span>
-              </p>
-            </div> -->
                 </div>
                 <div class="circle-line"></div>
                 <div class="circle-line arc"></div>
@@ -676,21 +662,23 @@
                 </h3>
                 <p>
                   The wireless cheesed on your bike mate zonked a load of old
-                  Lash hunky dory it's all gone to pot haggle William car boot
+                  tosh hunky dory it's all gone to pot haggle William car boot
                   pear shaped geeza.
                 </p>
-                <a href="#" class="get-started-btn">Get Started</a>
+                <a href="#buy" class="get-started-btn" title="Start using Appie"
+                  >Get Started</a
+                >
               </div>
             </div>
             <div class="vid2">
               <img
                 class="slide-img"
-                src="img/video-slide-1.jpg"
+                src="img/video-slide-1-379w.jpg"
                 alt="a Video
               explaining how to use appie"
               />
               <div class="navigate">
-                <a href="#">
+                <a href="#" title="navigate to left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -706,7 +694,7 @@
                     />
                   </svg>
                 </a>
-                <a href="#">
+                <a href="#" title="navigate to right">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -727,22 +715,22 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container availability-section">
-          <h2 class="pink-heading2">Download our app</h2>
+      <section class="availability-section">
+        <div class="availability-section-container">
+          <h2 class="pink-heading2">Download Our app</h2>
           <h3 class="large-blue-bold">
             App is available <span>for free on app store</span>
           </h3>
           <p class="small-grey-text">
-            jolly good quaint james bond victoris snonge happy days cras
-            <span>arse over blatant.</span>
+            jolly good quaint james bond victoria snonge happy days cras arse
+            over blatant.
           </p>
           <div class="download-for">
             <a href="#" class="ios" title="download for ios">
               <svg
                 fill=" #ffffff"
-                height="24px"
-                width="24px"
+                height="2.4rem"
+                width="2.4rem"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -763,7 +751,7 @@
             <a href="#" class="android" title="download for android">
               <svg
                 fill=" #192f62"
-                width="48x"
+                width="48px"
                 height="48px"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -783,7 +771,7 @@
         </div>
       </section>
       <div class="container pricing-sponsers-testimonial-section">
-        <section>
+        <section id="buy">
           <h2 class="section-heading">Simple pricing for Everyone</h2>
           <p class="section-first-text">
             The full monty spiffing good time no biggie cack grub fantastic.
@@ -805,8 +793,8 @@
               <ul class="plan-list">
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -841,8 +829,8 @@
                 </li>
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -876,8 +864,8 @@
                 </li>
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -910,7 +898,12 @@
                   24/7 support
                 </li>
               </ul>
-              <a href="#" class="get-started-btn basic">Choose plan</a>
+              <a
+                href="#"
+                class="get-started-btn basic"
+                title="choose the fresh plan"
+                >Choose plan</a
+              >
             </article>
             <article class="plan-card middle">
               <h3>Sweet</h3>
@@ -926,8 +919,8 @@
               <ul class="plan-list">
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -961,8 +954,8 @@
                 </li>
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -996,8 +989,8 @@
                 </li>
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1030,7 +1023,12 @@
                   24/7 support
                 </li>
               </ul>
-              <a href="#" class="get-started-btn pink-btn">Choose plan</a>
+              <a
+                href="#"
+                class="get-started-btn pink-btn"
+                title="Choose the sweet plan"
+                >Choose plan</a
+              >
               <div class="popular">Most popular</div>
             </article>
             <article class="plan-card last">
@@ -1047,8 +1045,8 @@
               <ul class="plan-list">
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1082,8 +1080,8 @@
                 </li>
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1117,8 +1115,8 @@
                 </li>
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1152,8 +1150,8 @@
                 </li>
                 <li class="plan-feature">
                   <svg
-                    width="32px"
-                    height="32px"
+                    width="3.2rem"
+                    height="3.2rem"
                     viewBox="-4.8 -4.8 33.60 33.60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1186,17 +1184,26 @@
                   24/7 support
                 </li>
               </ul>
-              <a href="#" class="get-started-btn basic">Choose plan</a>
+              <a
+                href="#"
+                class="get-started-btn basic"
+                title="choose the juicy plan"
+                >Choose plan</a
+              >
             </article>
           </div>
         </section>
         <section class="testimonial">
           <div class="customer-review">
-            <img src="img/people/customer-2.jpg" alt="customer picture" />
+            <img
+              class="testimonial-img"
+              src="img/people/customer-2.jpg"
+              alt="customer picture"
+            />
             <div>
               <svg
-                width="18px"
-                height="18px"
+                width="1.8rem"
+                height="1.8rem"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1207,8 +1214,8 @@
                 ></path>
               </svg>
               <svg
-                width="18px"
-                height="18px"
+                width="1.8rem"
+                height="1.8rem"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1219,8 +1226,8 @@
                 ></path>
               </svg>
               <svg
-                width="18px"
-                height="18px"
+                width="1.8rem"
+                height="1.8rem"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1231,8 +1238,8 @@
                 ></path>
               </svg>
               <svg
-                width="18px"
-                height="18px"
+                width="1.8rem"
+                height="1.8rem"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1243,8 +1250,8 @@
                 ></path>
               </svg>
               <svg
-                width="18px"
-                height="18px"
+                width="1.8rem"
+                height="1.8rem"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1261,14 +1268,9 @@
             <blockquote>
               <p>
                 Why I say old chap that is spiffing chip shop such a fibber the
-                bee's<span>
-                  knees, the wireless Richard fantastic do one cracking goal
-                  pukka</span
-                ><span>
-                  baking cakes starkers mush don't get shirty with me argy
-                  bargy, I naff</span
-                >
-                chimney pot blimey he lost his bottle cup.
+                bee's knees, the wireless Richard fantastic do one cracking goal
+                pukka baking cakes starkers mush don't get shirty with me argy
+                bargy, I naff chimney pot blimey he lost his bottle cup.
               </p>
             </blockquote>
             <div class="centered-flex">
@@ -1277,7 +1279,7 @@
                 <p>Web developer</p>
               </div>
               <div class="navigate">
-                <a href="#">
+                <a href="#" title="navigate to left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -1293,7 +1295,7 @@
                     />
                   </svg>
                 </a>
-                <a href="#">
+                <a href="#" title="navigate to right">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -1314,9 +1316,11 @@
           </div>
         </section>
         <article class="sponsers-part">
-          <h2>Appie works best with<span> your favorite platforms</span></h2>
+          <h2 class="section-heading">
+            Appie works best with<span> your favorite platforms</span>
+          </h2>
           <p class="section-first-text">
-            join over 40,000 businesses worldwide.
+            Join over 40,000 businesses worldwide.
           </p>
           <div class="sponsers-images">
             <figure class="sponser-card">
@@ -1355,15 +1359,16 @@
         </article>
       </div>
     </main>
-    <footer>
-      <div class="footer-flex">
-        <div class="">
-          <img class="footer-logo" src="img/logo.png" alt="Appie's logo" />
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="logo-column">
+          <a href="#" title="return back to the top of the page">
+            <img class="footer-logo" src="img/logo.png" alt="Appie's logo" />
+          </a>
           <p class="footer-text">
-            Appie WordPress is theme is the last
-            <span class="block">theme you will ever have.</span>
+            Appie WordPress is theme is the last theme you will ever have.
           </p>
-          <a href="#" class="read-mor">
+          <a href="#" class="read-mor" title="read more about Appie's themes">
             Read More
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1380,112 +1385,144 @@
               />
             </svg>
           </a>
-          <div class="social-pages">
-            <a class="page-link" href="#" title="Appie's Facebook Page">
-              <svg
-                fill="#192f62"
-                height="20px"
-                width="20x"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="-337 273 123.5 256"
-                xml:space="preserve"
-                class="icons"
-              >
-                <path
-                  d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"
-                ></path>
-              </svg>
-            </a>
-            <a class="page-link" href="#" title="Appie's Twitter Page">
-              <svg
-                fill="#192f62"
-                height="20px"
-                width="20px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="-271 296.6 256.4 208.4"
-                xml:space="preserve"
-                class="icons"
-              >
-                <path
-                  d="M-14.6,321.2c-9.4,4.2-19.6,7-30.2,8.3c10.9-6.5,19.2-16.8,23.1-29.1c-10.2,6-21.4,10.4-33.4,12.8 c-9.6-10.2-23.3-16.6-38.4-16.6c-29,0-52.6,23.6-52.6,52.6c0,4.1,0.4,8.1,1.4,12c-43.7-2.2-82.5-23.1-108.4-55 c-4.5,7.8-7.1,16.8-7.1,26.5c0,18.2,9.3,34.3,23.4,43.8c-8.6-0.3-16.7-2.7-23.8-6.6v0.6c0,25.5,18.1,46.8,42.2,51.6 c-4.4,1.2-9.1,1.9-13.9,1.9c-3.4,0-6.7-0.3-9.9-0.9c6.7,20.9,26.1,36.1,49.1,36.5c-18,14.1-40.7,22.5-65.3,22.5 c-4.2,0-8.4-0.2-12.6-0.7c23.3,14.9,50.9,23.6,80.6,23.6c96.8,0,149.7-80.2,149.7-149.7c0-2.3,0-4.6-0.1-6.8 C-30.5,341-21.6,331.8-14.6,321.2"
-                ></path>
-              </svg>
-            </a>
-            <a class="page-link" href="#" title="Appie's Pinterest Page">
-              <svg
-                fill="#192f62"
-                width="20px"
-                height="20px"
-                viewBox="0 0 20 20"
-                id="pinterest"
-                data-name="Flat Line"
-                xmlns="http://www.w3.org/2000/svg"
-                class="icons"
-              >
-                <path
-                  id="primary"
-                  d="M7,21,9,8m-.7,5.29a6.27,6.27,0,0,0,3.86,2.16c3.3.37,6.27-1.09,7.11-3.74,1-3.18-1.42-6.85-5.44-8.21s-8.09.13-9.1,3.3a4.9,4.9,0,0,0-.22,1.85"
-                  style="
-                    fill: none;
-                    stroke: #192f62;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-width: 2;
-                  "
-                ></path>
-              </svg>
-            </a>
-            <a class="page-link" href="#" title="Appie's LinkedIn Page"
-              ><svg
-                fill="#192f62"
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="20x"
-                height="20px"
-                viewBox="0 0 552.77 552.77"
-                xml:space="preserve"
-                class="icons"
-              >
-                <path
-                  d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95 C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"
-                ></path>
-                <path
-                  d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95 C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"
-                ></path>
-                <path
-                  d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846 c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192 c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666 c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343 c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627 c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48 S535.836,228.581,525.732,215.282z"
-                ></path>
-              </svg>
-            </a>
-          </div>
+          <ul class="social-pages">
+            <li>
+              <a class="page-link" href="#" title="Appie's Facebook Page">
+                <svg
+                  fill="#192f62"
+                  height="20px"
+                  width="20px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="-337 273 123.5 256"
+                  xml:space="preserve"
+                  class="icons"
+                >
+                  <path
+                    d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="page-link" href="#" title="Appie's Twitter Page">
+                <svg
+                  fill="#192f62"
+                  height="20px"
+                  width="20px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="-271 296.6 256.4 208.4"
+                  xml:space="preserve"
+                  class="icons"
+                >
+                  <path
+                    d="M-14.6,321.2c-9.4,4.2-19.6,7-30.2,8.3c10.9-6.5,19.2-16.8,23.1-29.1c-10.2,6-21.4,10.4-33.4,12.8 c-9.6-10.2-23.3-16.6-38.4-16.6c-29,0-52.6,23.6-52.6,52.6c0,4.1,0.4,8.1,1.4,12c-43.7-2.2-82.5-23.1-108.4-55 c-4.5,7.8-7.1,16.8-7.1,26.5c0,18.2,9.3,34.3,23.4,43.8c-8.6-0.3-16.7-2.7-23.8-6.6v0.6c0,25.5,18.1,46.8,42.2,51.6 c-4.4,1.2-9.1,1.9-13.9,1.9c-3.4,0-6.7-0.3-9.9-0.9c6.7,20.9,26.1,36.1,49.1,36.5c-18,14.1-40.7,22.5-65.3,22.5 c-4.2,0-8.4-0.2-12.6-0.7c23.3,14.9,50.9,23.6,80.6,23.6c96.8,0,149.7-80.2,149.7-149.7c0-2.3,0-4.6-0.1-6.8 C-30.5,341-21.6,331.8-14.6,321.2"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="page-link" href="#" title="Appie's Pinterest Page">
+                <svg
+                  fill="#192f62"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 20 20"
+                  id="pinterest"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icons"
+                >
+                  <path
+                    id="primary"
+                    d="M7,21,9,8m-.7,5.29a6.27,6.27,0,0,0,3.86,2.16c3.3.37,6.27-1.09,7.11-3.74,1-3.18-1.42-6.85-5.44-8.21s-8.09.13-9.1,3.3a4.9,4.9,0,0,0-.22,1.85"
+                    style="
+                      fill: none;
+                      stroke: #192f62;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="page-link" href="#" title="Appie's LinkedIn Page"
+                ><svg
+                  fill="#192f62"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 552.77 552.77"
+                  xml:space="preserve"
+                  class="icons"
+                >
+                  <path
+                    d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95 C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"
+                  ></path>
+                  <path
+                    d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95 C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"
+                  ></path>
+                  <path
+                    d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846 c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192 c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666 c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343 c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627 c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48 S535.836,228.581,525.732,215.282z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-column">
-          <h3>Company</h3>
-          <a href="#">About us</a>
-          <a href="#">Service</a>
-          <a href="#">Case Studies</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </div>
-        <div class="footer-column">
-          <h3>Support</h3>
-          <a href="#">Community</a>
-          <a href="#">Resources</a>
-          <a href="#">Faqs</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Careers</a>
-        </div>
-        <div class="footer-column contacts">
-          <h3>Get In Touch</h3>
-          <a href="mailto:support@appie.com">
+        <nav class="footer-column">
+          <p class="footer-headings">Company</p>
+          <ul>
+            <li>
+              <a href="#" title="about us">About us</a>
+            </li>
+            <li>
+              <a href="#" title="our services">Service</a>
+            </li>
+            <li>
+              <a href="#" title="case studies">Case Studies</a>
+            </li>
+            <li>
+              <a href="#" title="our blog">Blog</a>
+            </li>
+            <li>
+              <a href="#" title="contact us">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-column">
+          <p class="footer-headings">Support</p>
+          <ul>
+            <li>
+              <a href="#" title="Appie's community">Community</a>
+            </li>
+            <li>
+              <a href="#" title="more resources">Resources</a>
+            </li>
+            <li>
+              <a href="#" title="Faqs">Faqs</a>
+            </li>
+            <li>
+              <a href="#" title="privacy and policy terms">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" title="careers">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <address id="contact" class="footer-column contacts">
+          <p class="footer-headings">Get In Touch</p>
+          <a href="mailto:support@appie.com" title="mail us">
             <svg
               width="2.4rem"
               height="2.4rem"
@@ -1504,7 +1541,7 @@
             </svg>
             support@appie.com
           </a>
-          <a href="tel:+(642) 342 762 44">
+          <a href="tel:+(642) 342 762 44" title="call us">
             <svg
               width="24px"
               height="24px"
@@ -1528,11 +1565,11 @@
             </svg>
             +(642) 342 762 44
           </a>
-          <a href="#">
+          <a href="#" title="our location">
             <svg
               width="2.4rem"
               height="2.4rem"
-              viewBox="0 0 512 512"
+              viewBox="0 0 312 312"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1544,13 +1581,12 @@
                 id="Combined-Shape"
               ></path>
             </svg>
-            334 Belle Terre St Floor 7, San Francisco, AV 4206
+            442 Belle Terre St Floor 7, San Francisco, AV 4206
           </a>
-        </div>
+        </address>
       </div>
       <div class="footer-bottom">
         <div class="download-for">
-          <!-- class="download-for" -->
           <a href="#" title="download for ios" class="ios-footer">
             <svg
               fill=" #192f62"
@@ -1590,7 +1626,11 @@
           Copyright &copy; 2021 Appie.All rights reserved.
         </p>
       </div>
-      <a class="to-top-link" href="#top">
+      <a
+        class="to-top-link"
+        href="#"
+        title="return back to the top of the page"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

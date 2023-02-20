@@ -1,0 +1,980 @@
+/*** Below 1392 pixels ***/
+@media (max-width: 87em) {
+  /** Hero-87 **/
+  .hero-div-container {
+    grid-template-columns: 5fr 6fr;
+  }
+  .hero-text {
+    padding-top: 3.2rem;
+    padding-bottom: 8rem;
+  }
+  /** Advantages-87 **/
+  .advantages-section {
+    padding: 6.4rem;
+  }
+  /** Videos-77 **/
+  .videos {
+    column-gap: 1.6rem;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+  .vid1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-upon-image {
+    width: 100%;
+  }
+  .circle-line,
+  .above-icon {
+    left: 47.5%;
+    /* half of 95 of thumb img*/
+    top: 47.5%;
+    transform: translate(-50%, -50%);
+  }
+  .thumb-img {
+    width: 95%;
+    height: 30rem;
+  }
+  .watch-text {
+    width: 95%;
+  }
+  .vid2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .slide-img {
+    width: 90%;
+    height: 30rem;
+  }
+  /** Installation-87 **/
+  .installation-section .navigate {
+    position: initial;
+  }
+}
+
+/*** 1,232 breaks from 1227 on videos and watch-text ***/
+@media (max-width: 77em) {
+  /** Html-77 **/
+  html {
+    font-size: 56.25%;
+  }
+  /** Marketing-77**/
+  .marketing {
+    grid-template-columns: 6fr 9fr;
+  }
+  .marketing-img {
+    width: 100%;
+    height: 90%;
+  }
+  /** Videos-77 **/
+  .icon-upon-image {
+    width: 100%;
+  }
+  .watch-text {
+    width: 80%;
+    margin-left: 4.8rem;
+  }
+}
+/* from 1040 every thing became huge  */
+/* 1012  break on videos heading watch text, breaking in marketting headimg beside checks*/
+/* 1065 advantages breaks */
+/*** Below 1,072 ***/
+@media (max-width: 67em) {
+  /** Fonts-67 **/
+  .heading1 {
+    font-size: 4.4rem;
+  }
+  .large-blue-bold {
+    font-size: 3.6rem;
+  }
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .advantages-section h2 {
+    font-size: 3.6rem;
+  }
+  .pricing-sponsers-testimonial-section h2 {
+    font-size: 3.6rem;
+  }
+  .price-no {
+    font-size: 3.6rem;
+  }
+  .watch-text h3 {
+    font-size: 3rem;
+  }
+  /* Hero-67 */
+  .hero-text {
+    padding-top: 3.2rem;
+    padding-bottom: 8rem;
+  }
+  .hero-div-container {
+    padding: 8rem 0 0 8rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  /** Features-67 **/
+  .feature-square {
+    /* NOTE: no height given because if the the view port changed the content will overflow */
+    box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1.6rem;
+    padding: 2.4rem 3.2rem;
+  }
+  .icon-div {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .feature-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  /** Marketing-67 **/
+  .marketing {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+  .marketing-img-div {
+    align-items: center;
+  }
+  .marketing-img {
+    /* to edit the old val width is 100%  */
+    height: auto;
+  }
+  /** Advantages-67 (the blue section) **/
+  .advantages-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .advantages-img {
+    width: 100%;
+  }
+  .advantages {
+    justify-self: center;
+  }
+  .one-advantage {
+    width: max-content;
+  }
+  /** Installation-67 **/
+  .installation-4-sqaures {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+  }
+  .installation-square {
+    width: 100%;
+    /* height is 20rem; */
+  }
+  /** Pricing-67 **/
+  .plan-card {
+    padding: 2.4rem 2.4rem;
+  }
+  .plan-card .get-started-btn:link,
+  .plan-card .get-started-btn:visited {
+    font-weight: 600;
+    padding: 1.2rem 2.4rem;
+    border-radius: 3.2rem;
+    font-size: 1.6rem;
+  }
+  .large-number {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+  /** Testimonial-67**/
+  .testimonial {
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+    padding: 4.8rem 4.8rem;
+    margin-bottom: 8rem;
+  }
+  .testimonial-text {
+    font-size: 1.8rem;
+  }
+}
+
+/* 930 marketting breaks, and advantages*/
+/*** Below 944 --> work till 748 on marketing ***/
+@media (max-width: 59em) {
+  /** Html-59 **/
+  html {
+    font-size: 50%;
+  }
+  /** Marketing-59 **/
+  .marketing {
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .marketing-img-div {
+    display: none;
+  }
+  .marketing-text {
+    /* + padding left  */
+    padding: 6.4rem 0 6.4rem 6.4rem;
+  }
+  .benefits {
+    /* old value justify-content: space-between; */
+    justify-content: initial;
+    gap: 4.8rem;
+  }
+}
+
+/* 793 nav breaks  */
+/*** Below 800   ***/
+@media (max-width: 50em) {
+  /** Header-50 **/
+  .header {
+    gap: 0rem;
+  }
+  .header-navigation {
+    background-color: #eef1f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    /* to center the nav-list */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    /* To hide it  */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .header-nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  .header-navigation-links:link,
+  .header-navigation-links:visited {
+    font-size: 2.4rem;
+  }
+  .header-navigation-links-last {
+    flex-grow: 1;
+    margin-right: 1.2rem;
+    display: flex;
+  }
+  .header .get-started-btn:link,
+  .header .get-started-btn:visited {
+    width: max-content;
+    font-size: 2rem;
+    padding: 1.8rem 1.6rem;
+    border-radius: 3.2rem;
+    margin-left: auto;
+  }
+  .nav-mobile-icon {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    color: #0e1133;
+  }
+  /* to make menu appears after the nav disappeared  */
+  .nav-mobile-btn {
+    display: block;
+    margin-left: auto;
+  }
+  /* to make the menu icon disappears if it is openned and the close icon  appears ,
+   nav appears again  */
+  .nav-open .header-navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .nav-mobile-icon[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .nav-mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+  /* No people images (absolute images) */
+  .nav-open + main .hero-section .feedback {
+    display: none;
+  }
+  .nav-open + main .hero-section .mail-form {
+    display: none;
+  }
+  /* .nav-open + main .hero-section .img1,
+  .nav-open + main .hero-section .img2,
+  .nav-open + main .hero-section .img3,
+  .nav-open + main .hero-section .img4 {
+    position: initial;
+    transform: translate(0, 0);
+    display: none;
+  }
+  .nav-open + main .hero-section .people {
+    position: initial;
+  } */
+
+  /** Features-50 **/
+  .heading3 {
+    margin-bottom: 1.2rem;
+  }
+  .features-section .centered-flex {
+    display: block;
+    margin: 1.6rem 0 4.8rem;
+  }
+  .view-features:link,
+  .view-features:visited {
+    width: max-content;
+  }
+  .feature-square-text {
+    font-size: 1.4rem;
+  }
+  .read-mor:link,
+  .read-mor:visited {
+    font-size: 1.4rem;
+  }
+  /** Marketing-50 **/
+  .marketing-text p .block {
+    display: inline;
+  }
+  /** Availability-50 **/
+  .availability-section-container {
+    width: max-content;
+  }
+  /** Pricing-50 **/
+  .pricing-plans {
+    grid-template-columns: 1fr;
+  }
+  .plan-card {
+    padding: 3.2rem;
+  }
+  .plan-card h3 {
+    font-size: 2rem;
+  }
+  /** Footer-50 **/
+  .logo-column {
+    grid-column: span 3;
+  }
+  .footer-column:nth-child(2) {
+    grid-column: 5/6;
+    justify-self: flex-start;
+  }
+  .footer-column:nth-child(3) {
+    grid-column: 6/8;
+    justify-self: center;
+  }
+  .footer-bottom {
+    grid-template-columns: auto;
+    row-gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*** Below 640  ***/
+@media (max-width: 40em) {
+  /* grid not work for centering elements inside any container*/
+  /** Header-40 **/
+  .header {
+    padding: 0 6.4rem;
+  }
+  /** Hero-40  **/
+  .hero-section {
+    margin-bottom: 9.6rem;
+  }
+  .hero-div-container {
+    padding: 8rem 0 0 6.4rem;
+  }
+  .hero-text {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    padding: 3.2rem 6.4rem 0 0;
+    margin-bottom: -3.2rem;
+  }
+  .hero-img-container {
+    grid-column: 2/-1;
+  }
+  .heading1 {
+    font-size: 4.8rem;
+    line-height: 1.2;
+  }
+  .hero-text .text {
+    font-size: 2.2rem;
+  }
+  .text14 {
+    font-size: 2.2rem;
+  }
+  /* .mail-us {
+    width: 100%;
+     color: #adb5bd; 
+     padding: 1.8rem 1.8rem; 
+  } */
+  .mail-form {
+    width: 100%;
+  }
+  .mail-form .mail-us {
+    width: 100%;
+  }
+  .feedback {
+    gap: 1.6rem;
+  }
+  .people {
+    margin-right: 3.2rem;
+    height: 5.8rem;
+  }
+  .people img {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+  .img1 {
+    transform: translate(40%, 0);
+  }
+  .img2 {
+    left: 7rem;
+  }
+  .img3 {
+    transform: translate(60%, 0);
+  }
+  .feedback div:nth-child(2) {
+    align-self: center;
+  }
+  .feedback .text14 {
+    font-size: 1.8rem;
+  }
+  /** Features-40 **/
+  .container {
+    padding: 0 6.4rem;
+    margin-bottom: 9.6rem;
+  }
+  .features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section-heading {
+    font-size: 4.4rem;
+    font-weight: 700;
+  }
+  .section-first-text {
+    font-size: 1.8rem;
+  }
+  /* Done before */
+  /* .features-section .centered-flex {
+    display: block;
+    margin: 1.6rem 0 4.8rem;
+  } */
+  .view-features:link,
+  .view-features:visited {
+    display: inline-block;
+    max-width: max-content;
+    margin: 2.4rem auto 0;
+  }
+  .features-grid-2-3 {
+    grid-template-columns: auto;
+  }
+  .feature-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-div {
+    height: 5.2rem;
+    width: 5.2rem;
+  }
+  .heading3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .feature-square-text {
+    font-size: 2rem;
+  }
+  .read-mor:link,
+  .read-mor:visited {
+    font-size: 1.8rem;
+  }
+  /** Marketing-40 **/
+  /* .marketing [marketing-imgodiv + marketing-text] */
+  .marketing-text {
+    padding: 3.2rem 3.2rem;
+    text-align: center;
+  }
+  .pink-heading2 {
+    font-size: 1.8rem;
+  }
+  .marketing-text .block {
+    display: inline;
+  }
+  .small-grey-text {
+    font-size: 2rem;
+  }
+  .benefits {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+  .benefits h4 {
+    margin-bottom: 1.2rem;
+  }
+  .benefits p {
+    font-size: 1.8rem;
+  }
+  .one-benefit {
+    margin-bottom: 0;
+  }
+  /** Advantages-40 (the blue section) **/
+  .advantages-section {
+    padding: 9.6rem 6.4rem 8rem 6.4rem;
+    margin-bottom: 9.6rem;
+  }
+  .advantages-top-text {
+    width: initial; /*fit-content is not supported*/
+    margin: 0;
+  }
+  .advantages-top-text h2 {
+    font-size: 4.4rem;
+    margin-bottom: 1.6rem;
+  }
+  .advantages-top-text .block {
+    display: block;
+  }
+  .advantages-top-text p:nth-child(2) {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+  .advantages-grid {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr; /*not auto to take all remainder width of its div*/
+    gap: 6.4rem;
+  }
+  .advantages {
+    width: 100%;
+  }
+  .one-advantage {
+    width: 100%;
+  }
+  .one-advantage {
+    padding: 3.2rem 0rem 4.8rem 3.2rem;
+    border-radius: 0.8rem;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+  .one-advantage h3 {
+    margin-bottom: 0.8rem;
+  }
+  .small-white {
+    font-size: 1.6rem;
+  }
+  /** Installation-40 **/
+  .installation-section {
+    margin-bottom: 9.6rem;
+  }
+  .installation-section .section-heading {
+    margin-bottom: 1.6rem;
+  }
+  .installation-4-sqaures {
+    grid-template-columns: 1fr;
+    margin: 8rem 3.2rem 9.6rem;
+  }
+  .installation-square {
+    height: initial;
+    padding: 6.4rem 0 4.8rem;
+    box-shadow: 0.4rem 1.2rem 4.8rem 0px rgb(148 164 191 / 35%);
+  }
+  .large-number {
+    font-size: 4.4rem;
+  }
+  .installation-square:first-child {
+    box-shadow: 0.4rem 1.2rem 2.4rem 0px rgb(148 164 191 / 35%);
+  }
+  .installation-square:nth-child(2) {
+    box-shadow: 0.4rem 1.2rem 4.8rem 0px #efecea;
+  }
+  .installation-square:nth-child(3) {
+    box-shadow: 0.4rem 1.2rem 4.8rem 0px rgba(151, 214, 41, 0.144);
+  }
+  .installation-square:nth-child(4) {
+    box-shadow: 0 1.2rem 4.8rem 0px #f0e9ee;
+  }
+  /** Videos-40 **/
+  .videos {
+    grid-template-columns: 1fr;
+  }
+  .thumb-img {
+    width: 100%;
+    /* height is 30rem; */
+  }
+  .above-icon {
+    width: 9rem;
+    height: 9rem;
+  }
+  .circle-line {
+    width: 9.8rem;
+    height: 9.8rem;
+  }
+  .arc {
+    display: none;
+  }
+  .circle-line,
+  .above-icon {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .watch-text {
+    margin: 3.2rem 0 0 0;
+    width: 100%;
+  }
+  .watch-text .section-heading {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .watch-text p {
+    font-size: 2rem;
+    margin-bottom: 3.2rem;
+  }
+  .vid2 {
+    margin-top: 4.8rem;
+    width: 100%;
+  }
+  .slide-img {
+    width: 100%;
+  }
+  .navigate {
+    display: none;
+  }
+  /** Availability-40 **/
+  .availability-section {
+    padding: 12.8rem 6.4rem;
+    margin-bottom: 9.6rem;
+  }
+  .availability-section-container {
+    width: initial;
+  }
+  .availability-section .small-grey-text {
+    font-size: 1.8rem;
+  }
+  .ios:link,
+  .ios:visited,
+  .android:link,
+  .android:visited {
+    border-width: 1px;
+  }
+  /** Pricing-40 **/
+  .pricing-sponsers-testimonial-section h2 {
+    font-size: 4rem;
+  }
+  .pricing-sponsers-testimonial-section h2 + p {
+    font-size: 1.6rem;
+  }
+  .pricing-plans {
+    /* 1fr column */
+    margin-bottom: 9.6rem;
+  }
+  /* plan-card has 3.2rem padding*/
+  /* plan heading plan-card h3 has 2rem font size */
+  .price-no {
+    font-size: 4.4rem;
+  }
+  /** Testimonial-40 **/
+  .testimonial {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 6.4rem 4.8rem;
+    margin-bottom: 9.6rem;
+  }
+  .customer-review div {
+    margin-bottom: 1.2rem;
+  }
+
+  .testimonial-text .centered-flex {
+    display: block;
+  }
+  /** Sponsores-40 **/
+  .sponsers-part {
+    margin-bottom: 9.6rem;
+  }
+  .sponsers-images {
+    grid-template-columns: repeat(3, auto);
+    gap: 3.2rem;
+  }
+  .sponsers-images:last-child {
+    grid-template-columns: repeat(3, auto);
+    gap: 3.2rem;
+  }
+  .sponser-card {
+    width: 10rem;
+    height: 10rem;
+    padding: 3.2rem;
+    box-shadow: 2px 1.6rem 3.2rem 0px rgba(0, 0, 0, 0.11);
+  }
+  /*sponser-card img width is 100%*/
+  .sponsers-images:last-child .sponser-card:last-child {
+    grid-column: 2/3;
+  }
+  /** Footer-40 **/
+  .footer {
+    padding: 8rem 6.4rem 6.4rem;
+  }
+  .footer-grid {
+    text-align: center;
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+    padding-bottom: 9.6rem;
+  }
+  .logo-column {
+    grid-column: initial;
+    /* Center every thing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text {
+    font-size: 1.8rem;
+    /* has  1.6rem  margin bottom  */
+  }
+  .footer .read-mor:link,
+  .footer .read-mor:visited {
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 3.2rem;
+  }
+  .page-link:link,
+  .page-link:visited {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+  .footer-column {
+    grid-column: initial;
+    justify-self: center;
+    /* Flex  */
+    align-items: center;
+  }
+  .footer-column:nth-child(2),
+  .footer-column:nth-child(3) {
+    grid-column: initial;
+    justify-self: center;
+  }
+  .footer-logo,
+  .footer-headings {
+    font-size: 2rem;
+  }
+  .footer-column a:link,
+  .footer-column a:visited {
+    font-size: 1.6rem;
+  }
+  /* .footer-bottom {
+    grid-template-columns: auto;
+    row-gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  } */
+  .ios-footer:link,
+  .ios-footer:visited,
+  .android-footer:link,
+  .android-footer:visited {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 0.8rem;
+    width: max-content;
+    padding: 1.2rem 3.2rem;
+    border-width: 1px;
+    border-radius: 0.8rem;
+  }
+  .copyrights {
+    font-size: 1.6rem;
+  }
+  .to-top-link {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.6rem;
+    background-color: #f3b8c8;
+    position: absolute;
+    bottom: 2.4rem;
+    right: 2.4rem;
+  }
+}
+
+/*** Below 560 ***/
+@media (max-width: 35em) {
+  /** Footer-35 **/
+  .ios-footer:link,
+  .ios-footer:visited,
+  .android-footer:link,
+  .android-footer:visited {
+    padding: 1.2rem 2.4rem;
+    border-width: 1px;
+  }
+}
+
+/*** Below 464 ***/
+@media (max-width: 29em) {
+  /** Html-29 **/
+  html {
+    font-size: 47%;
+  }
+  /** Header-29 **/
+  .header {
+    padding: 0 4.8rem;
+  }
+  /** Hero-29 **/
+  .hero-section {
+    margin-bottom: 8rem;
+  }
+  .hero-div-container {
+    padding: 6.4rem 0 0 4.8rem;
+  }
+  .hero-text {
+    padding: 3.2rem 4.8rem 0 0;
+    margin-bottom: 0.8rem;
+  }
+  .hero-text .text {
+    font-size: 2rem;
+  }
+  .text14 {
+    font-size: 2rem;
+  }
+
+  /** Features-29 **/
+  .container {
+    padding: 0 4.8rem;
+    margin-bottom: 8rem;
+  }
+  .features-section {
+    margin-bottom: 6.4rem;
+  }
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-first-text {
+    font-size: 1.6rem;
+  }
+  .icon-div {
+    height: 4.2rem;
+    width: 4.2rem;
+  }
+  .heading3 {
+    font-size: 2rem;
+  }
+  .feature-square-text {
+    font-size: 1.6rem;
+  }
+  .read-mor:link,
+  .read-mor:visited {
+    font-size: 1.4rem;
+  }
+  /** Marketing-29 **/
+  .pink-heading2 {
+    font-size: 1.6rem;
+  }
+  .large-blue-bold {
+    font-size: 3rem;
+  }
+  .small-grey-text {
+    font-size: 1.6rem;
+  }
+  .benefits h4 {
+    font-size: 2rem;
+  }
+  .benefits p {
+    font-size: 1.6rem;
+  }
+  /** Advantages-29 **/
+  .advantages-section {
+    padding: 8rem 4.8rem 8rem;
+    margin-bottom: 8rem;
+  }
+  .advantages-top-text h2 {
+    font-size: 3.6rem;
+    padding: 0 3.2rem;
+  }
+  .advantages-top-text p:nth-child(2) {
+    font-size: 1.4rem;
+  }
+  .advantages-grid {
+    margin-top: 4.8rem;
+    gap: 4.8rem;
+  }
+  .one-advantage-before {
+    padding: 0.4rem;
+  }
+  .one-advantage-before div {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .one-advantage h3 {
+    font-size: 2rem;
+  }
+  .small-white {
+    font-size: 1.4rem;
+  }
+  /** Installation-29 **/
+  .installation-section {
+    margin-bottom: 8rem;
+  }
+  .installation-4-sqaures {
+    margin: 6.4rem 3.2rem 8rem;
+  }
+  /** Videos-29 **/
+  .watch-text {
+    margin: 3.2rem 0 0 0;
+  }
+  .watch-text .section-heading {
+    font-size: 3rem;
+  }
+  .watch-text p {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+  }
+  /** Availability-29 **/
+  .availability-section {
+    padding: 6.9rem 4.8rem;
+    margin-bottom: 8rem;
+  }
+  .ios:link,
+  .ios:visited,
+  .android:link,
+  .android:visited {
+    width: 19rem;
+    height: 7rem;
+    border-radius: 1.8rem;
+    border-width: 1px;
+  }
+  .android .icons {
+    width: 4rem;
+    height: 4rem;
+  }
+  /** Pricing-29 **/
+  .pricing-sponsers-testimonial-section h2 {
+    font-size: 3.4rem;
+  }
+  .pricing-plans {
+    margin-bottom: 8rem;
+  }
+  /** Testimonial-29 **/
+  .testimonial {
+    padding: 4.8rem 3.2rem;
+    margin-bottom: 8rem;
+  }
+  /** Sponsores-29 **/
+  .sponsers-part {
+    margin-bottom: 8rem;
+  }
+  .sponser-card {
+    width: 8rem;
+    height: 8rem;
+    padding: 2.4rem;
+    box-shadow: 2px 1.2rem 3.2rem 0px rgba(0, 0, 0, 0.11);
+  }
+  /** Footer-29 **/
+  .footer {
+    padding: 8rem 4.8rem 6.4rem;
+  }
+  .ios-footer:link,
+  .ios-footer:visited,
+  .android-footer:link,
+  .android-footer:visited {
+    padding: 1.2rem 1.6rem;
+    border-width: 1px;
+  }
+}
