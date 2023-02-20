@@ -494,6 +494,7 @@ a.view-features:visited {
 .vid1 {
 }
 .thumb-img {
+  width: 100%;
 }
 .icon-upon-image {
   position: relative;
