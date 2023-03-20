@@ -41,10 +41,21 @@
   gap: 0.8rem;
   font-size: 1.6rem;
   font-weight: 500;
+  transition: all 0.3s;
+}
+.header-navigation-links:hover,
+.header-navigation-links:active {
+  opacity: 0.8;
 }
 .get-started-btn.pink-btn {
   color: #fff;
   background: #fc3d65;
+  transition: all 0.3s;
+}
+.get-started-btn.pink-btn:hover,
+.get-started-btn.pink-btn:active {
+  color: #fff;
+  opacity: 0.8;
 }
 .nav-icon {
   width: 1.6rem;
@@ -110,10 +121,11 @@ if it became out of flow */
 .hero-img {
   width: 100%;
 }
-/* .mail-us:focus,
+.mail-us:focus,
 .mail-us:active {
-  border: none;
-} */
+  outline: none;
+  box-shadow: 0px 2.4rem 3.2rem 0px rgba(148, 164, 191, 0.646);
+}
 .hero-text .text {
   font-size: 1.8rem;
   margin-bottom: 3.6rem;
@@ -144,6 +156,12 @@ if it became out of flow */
   padding: 0.8rem;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.mail-form .btn-submit:active {
+  font-weight: 600;
+  padding: 1rem;
 }
 .mail-icon {
   position: absolute;
@@ -223,6 +241,12 @@ a.view-features:visited {
   /* padding and margin   */
   padding: 1.6rem 3.2rem;
   margin-left: auto;
+  transition: all 0.3s;
+}
+a.view-features:hover,
+a.view-features:active {
+  opacity: 0.9;
+  box-shadow: 0px 1rem 3.2rem 0 rgba(0, 0, 0, 0.1);
 }
 .features-grid-2-3 {
   display: grid;
@@ -574,6 +598,13 @@ a.view-features:visited {
   height: 4.5rem;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: all 0.3s;
+}
+.navigate a:hover,
+.navigate a:active {
+  padding: 0.6rem;
+  box-shadow: 0 1rem 2rem 0.8rem rgba(0, 0, 0, 0.1);
+  color: rgba(75, 75, 75);
 }
 .installation-section .get-started-btn:link,
 .installation-section .get-started-btn:visited,
@@ -582,6 +613,13 @@ a.view-features:visited {
   background-color: #fff;
   color: #0e1133;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.installation-section .get-started-btn:hover,
+.installation-section .get-started-btn:active,
+.get-started-btn.basic:hover,
+.get-started-btn.basic:active {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
 }
 /******************** End Of installation section  *************************/
 
@@ -622,6 +660,14 @@ a.view-features:visited {
   padding: 0.8rem 1.6rem 0.8rem 1.6rem;
   border: 2px solid #0e1133;
   border-radius: 1.6rem;
+  transition: all 0.3s;
+}
+.ios:hover,
+.ios:active .android:hover,
+.android:active {
+  opacity: 0.8;
+
+  /* box-shadow: 0 5rem 3.2rem 0 rgba(255, 255, 255, 0.1); */
 }
 .ios {
   background-color: #0e1133;
@@ -809,6 +855,12 @@ a.view-features:visited {
   color: #fff;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
 }
+.testimonial .navigate a:hover,
+.testimonial .navigate a:active {
+  padding: 0.4rem;
+  background-color: #fff;
+  color: rgba(75, 75, 75);
+}
 /**************** Sponsers *****************************/
 .sponsers-part span {
   display: block;
@@ -880,6 +932,11 @@ a.view-features:visited {
   gap: 0.4rem;
   color: #192f62;
   margin-bottom: 3.2rem;
+  transition: all 0.3s;
+}
+.footer .read-mor:hover,
+.footer .read-mor:active {
+  opacity: 0.8;
 }
 .social-pages {
   display: flex;
@@ -895,6 +952,11 @@ a.view-features:visited {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
+}
+.page-link:hover,
+.page-link:active {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
 }
 .footer-column {
   display: flex;
@@ -924,6 +986,11 @@ a.view-features:visited {
   font-size: 1.4rem;
   color: #192f62;
   line-height: 1.6;
+  transition: all 0.3s;
+}
+.footer-column a:hover,
+.footer-column a:active {
+  opacity: 0.8;
 }
 .contacts {
   justify-self: flex-end;
@@ -964,17 +1031,27 @@ a.view-features:visited {
   padding: 0.8rem 2.4rem;
   border: 2px solid #e3e7ee;
   border-radius: 0.8rem;
+  transition: all 0.3s;
 }
 .ios-footer:link,
 .ios-footer:visited {
   background-color: #fff;
   border-color: #fff;
 }
+.ios-footer:hover,
+.ios-footer:active {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
+.android-footer:hover,
+.android-footer:active {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
 .copyrights {
   color: #696a6f;
   font-size: 1.4rem;
 }
-.to-top-link {
+.to-top-link:link,
+.to-top-link:visited {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -982,9 +1059,16 @@ a.view-features:visited {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 0.6rem;
-  background-color: #f3b8c8;
+  /* background-color: #f3b8c8; */
+  background: #fc3d65;
+  opacity: 0.5;
   position: absolute;
   bottom: 2.4rem;
   right: 2.4rem;
+  transition: all 0.3s;
+}
+.to-top-link:hover,
+.to-top-link:active {
+  opacity: 1;
 }
 /***************** End Of Footer  ********************/
